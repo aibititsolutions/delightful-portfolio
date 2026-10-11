@@ -1,0 +1,95 @@
+/* Design tokens — the single source of truth for colour, type, shape and motion. */
+
+:root {
+  color-scheme: light;
+
+  /* Raw pastels: illustration + decoration only (constant across themes). */
+  --lavender: #e8deff;
+  --lilac: #c9b4ff;
+  --pink: #ffd9e8;
+  --rose: #f4a8cc;
+  --peach: #ffe5d6;
+  --periwinkle: #dde4ff;
+  --butter: #ffefb8;
+  --cream: #fff6ec;
+  --art-ink: #342746;
+
+  /* Semantic colours. */
+  --bg: #fffaff;
+  --surface: #ffffff;
+  --ink: #342746;
+  --muted: #6b5e7b; /* ≥ 4.5:1 on every tint below */
+  --border: #eadff5;
+  --accent: #9370db; /* decorative only — too light for body text */
+  --accent-ink: #6a47bf; /* links, labels, focus rings */
+  --btn-bg: #342746;
+  --btn-fg: #ffffff;
+
+  --tint-lavender: #f1eaff;
+  --tint-pink: #ffeaf2;
+  --tint-peach: #fff0e6;
+  --tint-periwinkle: #eaeeff;
+  --tint-butter: #fff7dc;
+
+  --shadow-sm: 0 1px 2px rgb(52 39 70 / 0.05), 0 4px 14px rgb(52 39 70 / 0.05);
+  --shadow-md: 0 2px 4px rgb(52 39 70 / 0.04), 0 16px 36px rgb(108 79 170 / 0.13);
+  --dot: rgb(147 112 219 / 0.22);
+
+  /* Type. */
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-hand: 'Caveat Variable', 'Segoe Print', 'Bradley Hand', cursive;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --text-hero: clamp(2.3rem, 1.2rem + 4.4vw, 4.1rem);
+  --text-h2: clamp(1.9rem, 1.3rem + 2.5vw, 3rem);
+  --text-h3: clamp(1.3rem, 1.15rem + 0.7vw, 1.6rem);
+  --text-lede: clamp(1.05rem, 1rem + 0.35vw, 1.2rem);
+
+  /* Shape + space. */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --container: 1160px;
+  --section-space: clamp(4.5rem, 10vw, 8rem);
+
+  /* Motion: one soft ease for entrances, one springy ease for touch feedback. */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 160ms;
+  --dur: 320ms;
+  --dur-slow: 760ms;
+}
+
+/* Dark theme: plum + midnight violet, designed rather than inverted. */
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #1a1326;
+  --surface: #241a34;
+  --ink: #f4ecff;
+  --muted: #bcafd0;
+  --border: #3b2e54;
+  --accent: #b79cf5;
+  --accent-ink: #d3c2ff;
+  --btn-bg: #f4ecff;
+  --btn-fg: #1a1326;
+
+  --tint-lavender: #2f2449;
+  --tint-pink: #3d2441;
+  --tint-peach: #3e2b36;
+  --tint-periwinkle: #272b4e;
+  --tint-butter: #3a3136;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.25), 0 4px 14px rgb(0 0 0 / 0.2);
+  --shadow-md: 0 2px 4px rgb(0 0 0 / 0.25), 0 16px 36px rgb(0 0 0 / 0.35);
+  --dot: rgb(201 180 255 / 0.16);
+}
+
+[data-tint='lavender'] { --tint: var(--tint-lavender); --tint-strong: var(--lilac); }
+[data-tint='pink'] { --tint: var(--tint-pink); --tint-strong: var(--rose); }
+[data-tint='peach'] { --tint: var(--tint-peach); --tint-strong: #ffc9a8; }
+[data-tint='periwinkle'] { --tint: var(--tint-periwinkle); --tint-strong: #b9c6ff; }
+[data-tint='butter'] { --tint: var(--tint-butter); --tint-strong: #ffd98a; }

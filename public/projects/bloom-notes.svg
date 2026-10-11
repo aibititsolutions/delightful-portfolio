@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="800" height="500" fill="#fbf8ff"/>
+<rect width="170" height="500" fill="#f1eaff"/>
+<circle cx="30" cy="34" r="10" fill="#9370db"/><text x="48" y="39" font-size="15" font-weight="700" fill="#342746">Bloom Notes</text>
+<text x="20" y="84" font-size="10" font-weight="700" fill="#6b5e7b" letter-spacing="1">NOTEBOOKS</text>
+<rect x="12" y="96" width="146" height="30" rx="8" fill="#fff"/><circle cx="28" cy="111" r="5" fill="#f4a8cc"/><text x="42" y="115" font-size="12" font-weight="600" fill="#342746">Data Structures</text><text x="140" y="115" font-size="10" fill="#6b5e7b">24</text>
+<circle cx="28" cy="147" r="5" fill="#c9b4ff"/><text x="42" y="151" font-size="12" fill="#342746">Databases</text><text x="140" y="151" font-size="10" fill="#6b5e7b">18</text>
+<circle cx="28" cy="181" r="5" fill="#ffd98a"/><text x="42" y="185" font-size="12" fill="#342746">Web Security</text><text x="140" y="185" font-size="10" fill="#6b5e7b">11</text>
+<circle cx="28" cy="215" r="5" fill="#b9c6ff"/><text x="42" y="219" font-size="12" fill="#342746">Algorithms</text><text x="140" y="219" font-size="10" fill="#6b5e7b">32</text>
+<rect x="12" y="440" width="146" height="40" rx="10" fill="#fff"/><text x="24" y="457" font-size="10" fill="#6b5e7b">Study streak</text><text x="24" y="472" font-size="12" font-weight="700" fill="#6a47bf">12 days ✿</text>
+<text x="200" y="44" font-size="11" fill="#6b5e7b">Data Structures  /  Trees</text>
+<text x="200" y="82" font-size="24" font-weight="700" fill="#342746">Binary Search Trees</text>
+<rect x="200" y="98" width="62" height="20" rx="10" fill="#ffeaf2"/><text x="212" y="112" font-size="10" fill="#342746">lecture 7</text>
+<rect x="268" y="98" width="52" height="20" rx="10" fill="#eaeeff"/><text x="280" y="112" font-size="10" fill="#342746">exam</text>
+<text x="200" y="150" font-size="13" fill="#342746">A BST keeps every left child smaller and every right child</text>
+<text x="200" y="170" font-size="13" fill="#342746">larger than its parent, so lookups can skip half the tree.</text>
+<text x="200" y="206" font-size="15" font-weight="700" fill="#342746">Complexity</text>
+<circle cx="206" cy="226" r="3" fill="#f4a8cc"/><text x="218" y="230" font-size="13" fill="#342746">Search, insert, delete: O(log n) when balanced</text>
+<circle cx="206" cy="248" r="3" fill="#f4a8cc"/><text x="218" y="252" font-size="13" fill="#342746">Worst case O(n) when the tree degrades to a list</text>
+<rect x="200" y="274" width="330" height="112" rx="10" fill="#2e2240"/>
+<text font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11"><tspan x="216" y="298" fill="#c9b4ff">function</tspan><tspan fill="#ffd9e8"> search</tspan><tspan fill="#f4ecff">(node, key) {</tspan><tspan x="230" y="316" fill="#c9b4ff">if</tspan><tspan fill="#f4ecff"> (!node || node.key === key) </tspan><tspan fill="#c9b4ff">return</tspan><tspan fill="#f4ecff"> node</tspan><tspan x="230" y="334" fill="#c9b4ff">return</tspan><tspan fill="#f4ecff"> key &lt; node.key</tspan><tspan x="244" y="352" fill="#f4ecff">? search(node.left, key)</tspan><tspan x="244" y="370" fill="#f4ecff">: search(node.right, key)</tspan></text>
+<text x="200" y="416" font-size="13" fill="#6b5e7b">Next: self-balancing trees (AVL, red-black)</text>
+<rect x="560" y="24" width="216" height="452" rx="16" fill="#fff" stroke="#eadff5"/>
+<text x="580" y="56" font-size="14" font-weight="700" fill="#342746">Today's review</text><text x="580" y="74" font-size="11" fill="#6b5e7b">8 of 14 cards done</text>
+<rect x="580" y="86" width="176" height="6" rx="3" fill="#f1eaff"/><rect x="580" y="86" width="100" height="6" rx="3" fill="#9370db"/>
+<rect x="580" y="112" width="176" height="190" rx="14" fill="#fff7dc"/>
+<text x="596" y="138" font-size="10" font-weight="700" fill="#6b5e7b" letter-spacing="1">QUESTION</text>
+<text x="596" y="170" font-size="14" font-weight="600" fill="#342746">What makes a BST</text><text x="596" y="190" font-size="14" font-weight="600" fill="#342746">lookup O(log n)?</text>
+<rect x="596" y="256" width="144" height="30" rx="15" fill="#342746"/><text x="668" y="275" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Show answer</text>
+<text x="580" y="336" font-size="11" fill="#6b5e7b">How well did you know it?</text>
+<rect x="580" y="348" width="54" height="28" rx="14" fill="#ffeaf2"/><text x="607" y="366" font-size="11" fill="#342746" text-anchor="middle">Again</text>
+<rect x="641" y="348" width="54" height="28" rx="14" fill="#f1eaff"/><text x="668" y="366" font-size="11" fill="#342746" text-anchor="middle">Good</text>
+<rect x="702" y="348" width="54" height="28" rx="14" fill="#eaeeff"/><text x="729" y="366" font-size="11" fill="#342746" text-anchor="middle">Easy</text>
+<text x="580" y="416" font-size="11" fill="#6b5e7b">Up next</text>
+<rect x="580" y="426" width="176" height="34" rx="10" fill="#fbf8ff"/><text x="592" y="447" font-size="11" fill="#342746">In-order traversal gives…</text>
+</svg>

@@ -1,0 +1,183 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: max(0.75rem, env(safe-area-inset-top)) var(--gutter) 0;
+}
+
+.site-header__bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: 0.4rem 0.4rem 0.4rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+}
+
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  margin-right: auto;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 560;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header__logo .doodle {
+  width: 1.4rem;
+  color: var(--lilac);
+  transition: rotate var(--dur-slow) var(--ease-soft);
+}
+
+.icon-button {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: none;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) ease, transform var(--dur-fast) var(--ease-spring);
+}
+
+.icon-button:active {
+  transform: scale(0.9);
+}
+
+/* Both icons are rendered; the theme attribute picks one (no hydration mismatch). */
+.theme-toggle__sun,
+[data-theme='dark'] .theme-toggle__moon {
+  display: none;
+}
+
+[data-theme='dark'] .theme-toggle__sun {
+  display: block;
+  animation: theme-pop var(--dur) var(--ease-spring);
+}
+
+.theme-toggle__moon {
+  animation: theme-pop var(--dur) var(--ease-spring);
+}
+
+@keyframes theme-pop {
+  from {
+    opacity: 0;
+    rotate: -60deg;
+    scale: 0.5;
+  }
+}
+
+.site-nav a:not(.btn) {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-inline: 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.975rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+.site-nav a[aria-current] {
+  background: var(--tint-lavender);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .site-nav a:not(.btn):hover,
+  .icon-button:hover {
+    background: var(--tint-lavender);
+  }
+
+  .site-header__logo:hover .doodle {
+    rotate: 72deg;
+  }
+}
+
+/* ----- Phone + tablet: the nav becomes a drop-down card ----- */
+@media (max-width: 899px) {
+  .site-nav {
+    position: absolute;
+    inset: calc(100% + 0.5rem) 0 auto;
+    display: grid;
+    gap: 0.75rem;
+    max-height: calc(100dvh - 9.5rem);
+    overflow-y: auto;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    /* Closed: hidden from sight, keyboard and assistive tech. */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+    transform-origin: top;
+    transition:
+      opacity var(--dur-fast) ease,
+      transform var(--dur) var(--ease-soft),
+      visibility 0s var(--dur);
+  }
+
+  .site-nav[data-open='true'] {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    transition-delay: 0s;
+  }
+
+  .site-nav a:not(.btn) {
+    min-height: 3rem;
+    font-size: 1.05rem;
+  }
+}
+
+/* Phone landscape: lay the links out in a row so the menu fits the short viewport. */
+@media (max-width: 899px) and (max-height: 500px) {
+  .site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* ----- Desktop: inline links ----- */
+@media (min-width: 900px) {
+  .site-header__menu {
+    display: none;
+  }
+
+  .site-nav,
+  .site-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .site-nav__cta {
+    margin-inline: 0.6rem 0.25rem;
+  }
+}
+
+.site-header__name-short {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .site-header__name-full { display: none; }
+  .site-header__name-short { display: inline; }
+}

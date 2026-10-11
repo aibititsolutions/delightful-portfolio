@@ -1,0 +1,55 @@
+.skills__grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .skills__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 960px) {
+  .skills__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.skill-card {
+  padding: 1.5rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  transition: translate var(--dur) var(--ease-soft), border-color var(--dur) ease, box-shadow var(--dur) ease;
+}
+
+.skill-card__mark {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 40% 60% 55% 45% / 55% 45% 60% 40%;
+  background: var(--tint);
+  color: var(--tint-strong);
+  transition: rotate var(--dur-slow) var(--ease-spring);
+}
+
+[data-theme='light'] .skill-card__mark,
+:root:not([data-theme]) .skill-card__mark {
+  /* pastel-on-pastel needs a deeper mark in the light theme */
+  color: color-mix(in srgb, var(--tint-strong) 70%, var(--accent));
+}
+
+.skill-card h3 {
+  margin-bottom: 0.9rem;
+  font-size: 1.3rem;
+}
+
+@media (hover: hover) {
+  .skill-card:hover {
+    translate: 0 -4px;
+    border-color: var(--tint-strong);
+    box-shadow: var(--shadow-md);
+  }
+
+  .skill-card:hover .skill-card__mark {
+    rotate: 14deg;
+  }
+}

@@ -1,0 +1,91 @@
+.contact {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.contact__panel {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 6vw, 4rem);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(var(--dot) 1.2px, transparent 1.6px) 0 0 / 24px 24px,
+    linear-gradient(135deg, var(--tint-pink), var(--tint-lavender) 55%, var(--tint-periwinkle));
+  text-align: center;
+}
+
+.contact__panel h2 {
+  max-width: 17em;
+  font-size: clamp(2rem, 1.3rem + 3.2vw, 3.5rem);
+}
+
+.contact__panel .lede {
+  max-width: 34rem;
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.contact__actions [data-state='copied'] {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.contact__actions [data-state='copied'] .icon {
+  animation: pop var(--dur) var(--ease-spring);
+}
+
+@keyframes pop {
+  from { scale: 0.3; }
+}
+
+.contact__email {
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+
+.contact__hint {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact .social-links {
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.contact__doodle {
+  position: absolute;
+  animation: float 7s ease-in-out infinite;
+}
+
+.contact__doodle--1 { top: 12%; left: 7%; width: 2rem; color: var(--rose); rotate: -14deg; }
+.contact__doodle--2 { top: 18%; right: 9%; width: 1.6rem; color: var(--lilac); animation-delay: -2s; }
+.contact__doodle--3 { bottom: 14%; left: 11%; width: 1.8rem; color: var(--accent); animation-delay: -4s; }
+.contact__doodle--4 { bottom: 20%; right: 7%; width: 1.2rem; color: var(--rose); animation-delay: -5s; }
+
+@media (max-width: 639px) {
+  .contact__doodle--3,
+  .contact__doodle--4 {
+    display: none;
+  }
+
+  .contact__doodle--1 { top: 1.25rem; left: 1.25rem; width: 1.4rem; }
+  .contact__doodle--2 { top: 1.5rem; right: 1.5rem; width: 1.2rem; }
+}
+
+@media (max-width: 479px) {
+  .contact__actions .btn {
+    flex: 1 1 100%;
+  }
+}

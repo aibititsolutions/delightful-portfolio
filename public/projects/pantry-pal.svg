@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="800" height="500" fill="#fffaf6"/>
+<rect width="800" height="60" fill="#fff"/><rect y="60" width="800" height="1" fill="#f3e6dc"/>
+<circle cx="38" cy="30" r="12" fill="#f4a8cc"/><text x="58" y="36" font-size="17" font-weight="700" fill="#342746">Pantry Pal</text>
+<text x="470" y="35" font-size="13" font-weight="600" fill="#342746">Recipes</text><text x="545" y="35" font-size="13" fill="#6b5e7b">Meal plan</text><text x="630" y="35" font-size="13" fill="#6b5e7b">Shopping list</text><circle cx="762" cy="30" r="14" fill="#e8deff"/>
+<text x="32" y="102" font-size="22" font-weight="700" fill="#342746">What can I cook tonight?</text>
+<text x="32" y="124" font-size="12" fill="#6b5e7b">Matched against the 9 ingredients in your pantry</text>
+<g font-size="11" fill="#342746"><rect x="32" y="140" width="56" height="24" rx="12" fill="#ffeaf2"/><text x="60" y="156" text-anchor="middle">eggs ×</text><rect x="94" y="140" width="68" height="24" rx="12" fill="#fff0e6"/><text x="128" y="156" text-anchor="middle">tomato ×</text><rect x="168" y="140" width="62" height="24" rx="12" fill="#f1eaff"/><text x="199" y="156" text-anchor="middle">pasta ×</text><rect x="236" y="140" width="70" height="24" rx="12" fill="#fff7dc"/><text x="271" y="156" text-anchor="middle">spinach ×</text><rect x="312" y="140" width="56" height="24" rx="12" fill="#eaeeff"/><text x="340" y="156" text-anchor="middle">feta ×</text><rect x="374" y="140" width="110" height="24" rx="12" fill="#fff" stroke="#eadff5" stroke-dasharray="3 3"/><text x="429" y="156" text-anchor="middle" fill="#6a47bf">+ add ingredient</text></g>
+<g>
+<rect x="32" y="186" width="232" height="286" rx="16" fill="#fff" stroke="#f3e6dc"/><rect x="32" y="186" width="232" height="130" rx="16" fill="#ffd9c2"/><circle cx="148" cy="251" r="38" fill="#fff6ec"/><circle cx="148" cy="251" r="26" fill="#ff9d7a"/><circle cx="138" cy="244" r="5" fill="#8fcf9a"/><circle cx="158" cy="258" r="5" fill="#8fcf9a"/>
+<rect x="46" y="200" width="78" height="22" rx="11" fill="#fff"/><text x="85" y="215" font-size="10" font-weight="700" fill="#2f7d4f" text-anchor="middle">5/5 in pantry</text>
+<text x="48" y="344" font-size="15" font-weight="700" fill="#342746">Tomato &amp; feta pasta</text><text x="48" y="364" font-size="11" fill="#6b5e7b">25 min · serves 2 · vegetarian</text>
+<rect x="48" y="380" width="200" height="6" rx="3" fill="#f3e6dc"/><rect x="48" y="380" width="200" height="6" rx="3" fill="#8fcf9a"/>
+<rect x="48" y="420" width="200" height="34" rx="17" fill="#342746"/><text x="148" y="441" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Cook this</text>
+</g>
+<g>
+<rect x="284" y="186" width="232" height="286" rx="16" fill="#fff" stroke="#f3e6dc"/><rect x="284" y="186" width="232" height="130" rx="16" fill="#e2f1d8"/><circle cx="400" cy="251" r="38" fill="#fff6ec"/><circle cx="400" cy="251" r="26" fill="#ffe08a"/><circle cx="400" cy="251" r="10" fill="#ffb347"/>
+<rect x="298" y="200" width="78" height="22" rx="11" fill="#fff"/><text x="337" y="215" font-size="10" font-weight="700" fill="#2f7d4f" text-anchor="middle">4/5 in pantry</text>
+<text x="300" y="344" font-size="15" font-weight="700" fill="#342746">Spinach frittata</text><text x="300" y="364" font-size="11" fill="#6b5e7b">20 min · serves 3 · missing: onion</text>
+<rect x="300" y="380" width="200" height="6" rx="3" fill="#f3e6dc"/><rect x="300" y="380" width="160" height="6" rx="3" fill="#8fcf9a"/>
+<rect x="300" y="420" width="200" height="34" rx="17" fill="#fff" stroke="#eadff5"/><text x="400" y="441" font-size="12" font-weight="600" fill="#342746" text-anchor="middle">Add onion to list</text>
+</g>
+<g>
+<rect x="536" y="186" width="232" height="286" rx="16" fill="#fff" stroke="#f3e6dc"/><rect x="536" y="186" width="232" height="130" rx="16" fill="#e8deff"/><circle cx="652" cy="251" r="38" fill="#fff6ec"/><circle cx="652" cy="251" r="26" fill="#f4a8cc"/><circle cx="644" cy="246" r="6" fill="#fff"/><circle cx="660" cy="258" r="6" fill="#fff"/>
+<rect x="550" y="200" width="78" height="22" rx="11" fill="#fff"/><text x="589" y="215" font-size="10" font-weight="700" fill="#a0611a" text-anchor="middle">3/6 in pantry</text>
+<text x="552" y="344" font-size="15" font-weight="700" fill="#342746">Shakshuka with feta</text><text x="552" y="364" font-size="11" fill="#6b5e7b">30 min · serves 2 · missing: 3</text>
+<rect x="552" y="380" width="200" height="6" rx="3" fill="#f3e6dc"/><rect x="552" y="380" width="100" height="6" rx="3" fill="#ffc98a"/>
+<rect x="552" y="420" width="200" height="34" rx="17" fill="#fff" stroke="#eadff5"/><text x="652" y="441" font-size="12" font-weight="600" fill="#342746" text-anchor="middle">Add 3 items to list</text>
+</g>
+</svg>
