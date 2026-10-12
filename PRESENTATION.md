@@ -7,6 +7,82 @@ A guide for presenting **The Cute Coding Atelier**, the portfolio website of Cha
 
 ---
 
+## Start here: the script to say out loud
+
+Read this from top to bottom while you scroll the website. Replace the words in **[brackets]**. The lines in *(italics)* are actions, not words to say. The numbered sections after this script are your reference notes for details and questions.
+
+### Opening
+
+> "Good **[morning / afternoon]**, **[Sir / Ma'am]**, and good **[morning / afternoon]** everyone. My name is **[your name]**.
+>
+> Today I will present a portfolio website. It is called *The Cute Coding Atelier*, and it is the portfolio of **Cha-Cha Festijo Bote**, or Cha-cha for short, a full-stack developer.
+>
+> A portfolio website has one job: to introduce a developer, show her work, and make it easy to contact her. I will first show you the website, then explain how it was built, and then I will be happy to answer your questions."
+
+### One honest note
+
+> "Before I start, one note. The name and the photo are real. The projects, the work experience and the school on the page are sample data, written for this activity to show how a finished portfolio looks."
+
+### The walkthrough
+
+*(Show the top of the page.)*
+
+> "This is the hero section, the first thing a visitor sees. It shows her photo, her name, and what she does: 'I build delightful digital experiences.' There are two buttons, one to see her projects and one to contact her.
+>
+> The page also has small details that give it personality. This terminal types by itself, and if I click the cat, it reacts."
+
+*(Click the cat. Then scroll to About.)*
+
+> "Next is the About section. It has a short introduction and small notes about what she is building and what she enjoys."
+
+*(Scroll to Projects. Open one case study, then close it.)*
+
+> "This is the Projects section. Each project explains the problem, her role, the technologies used, and the technical decisions. The full details open in a popup like this."
+
+*(Scroll through Skills, Journey and Process.)*
+
+> "Her skills are grouped by area, such as frontend, backend and databases. After that is a timeline of her experience and education, and then the six steps of how she works: understand, plan, design, build, test and improve."
+
+*(Scroll to Contact. Click the copy button.)*
+
+> "Last is the Contact section. A visitor can send an email, or copy the email address with one click."
+
+*(Click the sun/moon button in the header.)*
+
+> "The site also has a dark mode, and it remembers which one you chose."
+
+*(Press F12, click the phone icon, and change the width.)*
+
+> "And it is responsive. On a phone, the layout rearranges itself and the menu becomes a dropdown."
+
+### How it was built
+
+> "Now, how it was built. The website uses three main tools.
+>
+> First, **React**, a JavaScript library for building a page out of reusable pieces called components. Every section you saw is one component.
+>
+> Second, **TypeScript**, which is JavaScript with types. It catches mistakes before the site runs.
+>
+> Third, **Vite**, a build tool that packages the code into small, fast files.
+>
+> The design is written in plain CSS. There is no Bootstrap, no Tailwind, and no animation library.
+>
+> There are two ideas I want to point out. One: all the text of the site is stored in a single file, separate from the design, so updating the portfolio means editing only that file. Two: all colours, fonts and spacing are saved as CSS variables, which keeps the design consistent and makes dark mode possible.
+>
+> This is a static website. It has no backend and no database, because a portfolio only shows fixed information."
+
+### Quality
+
+> "For quality, the site was tested on screen widths from a small phone up to a large monitor. It can be used with the keyboard only, the images have text descriptions for screen readers, and the animations turn off for people who prefer reduced motion."
+
+### Closing
+
+> "To summarize: this is a fast, responsive and accessible portfolio website, built with React, TypeScript and plain CSS, with a design that shows personality and still looks professional.
+>
+> The source code is on GitHub. That is the end of my presentation. Thank you for listening, and I am ready for your questions."
+
+---
+
 ## 1. The one-sentence summary
 
 > "This is a personal portfolio website for a full-stack developer. It is a single page built with React and TypeScript, designed with a soft pastel style, and it works on phones, tablets and desktops."
