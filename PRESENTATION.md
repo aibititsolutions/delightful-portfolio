@@ -9,11 +9,11 @@ A guide for Cha-cha to present **The Cute Coding Atelier**, her own portfolio we
 
 ## Start here: the script to say out loud
 
-Read this from top to bottom while you scroll the website. Replace the words in **[brackets]**. The lines in *(italics)* are actions, not words to say. The numbered sections after this script are your reference notes for details and questions.
+Read this from top to bottom while you scroll the website. The lines in *(italics)* are actions, not words to say. The numbered sections after this script are your reference notes for details and questions.
 
 ### Opening
 
-> "Good **[morning / afternoon]**, **[Sir / Ma'am]**, and good **[morning / afternoon]** everyone. My name is **Cha-Cha Festijo Bote**, and you can call me Cha-cha.
+> "Good day to our instructor, and good day everyone. My name is **Cha-cha**. My full name is Cha-Cha Festijo Bote.
 >
 > Today I will present my portfolio website. I call it *The Cute Coding Atelier*.
 >
